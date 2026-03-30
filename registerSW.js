@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/builder-trainer/sw.js', { scope: '/builder-trainer/' })})}
