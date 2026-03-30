@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* CONTAINER */
+.app-container {
+  max-width: 520px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TITELS */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* BUTTONS (algemeen) */
+button {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #334155;
+  color: white;
+}
+
+/* DONE BUTTON */
+button.done {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: transparent;
+}
+
+/* BACK BUTTON */
+button:first-of-type {
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.exercise-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.exercise-card:hover {
+  border-color: #475569;
+}
+
+/* DONE CARD */
+.exercise-card.done {
+  opacity: 0.6;
+}
+
+/* HEADER */
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DESCRIPTION */
+.exercise-description {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+  animation: fadeIn 0.2s ease;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  all: unset;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  cursor: pointer;
+}
+
+/* ACTIEVE TAB */
+.tabs button.active {
+  background: #e2e8f0;
+  color: #0f172a;
+  border: 1px solid #334155;    
+  font-weight: 400;             
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.progress-container {
+  margin-bottom: 20px;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #e2e8f0;
+  transition: width 0.3s ease;
+}
